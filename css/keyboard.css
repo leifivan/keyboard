@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ----- Romaji keyboard start ----- */
+#romajiKeyboard {
+  background: #4a4a4a;
+  text-align: center;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+#textBoxR {
+  width: 382px;
+  margin-left: -48px;
+}
+
+#romajiKeyboard > div {
+  margin-top: 10px;
+}
+
+/*  Z X .. */
+#romajiKeyboard > div:nth-child(4) {
+  margin-left: -40px;
+}
+
+/*  閉じる.. */
+#romajiKeyboard > div:last-child {
+  margin-left: -50px;
+}
+
+#romajiKeyboard > div > button {
+  background: white;
+  color: black;
+  height: 30px;
+  width: 30px;
+  border: none;
+}
+
+#romajiKeyboard.active {
+  height: 250px;
+}
+
+
+#romajiKeyboard > div > #romaji-close {
+  width: 65px;
+}
+
+#romajiKeyboard > div > #romaji-suuji {
+  width: 45px;
+}
+
+#romajiKeyboard > div > #romaji-kana {
+  width: 45px;
+}
+
+#romajiKeyboard > div > #romaji-komoji {
+  width: 65px;
+}
+
+#romajiKeyboard > div > #romaji-modoru {
+  width: 61px;
+}
+
+#romajiKeyboard > div > #romaji-kettei {
+  width: 85px;
+}
+
+/*----- Romaji keyboard end ----- */
+
+
+
+
+/*----- Numeric keyboard start ----- */
+#numericKeyboard {
+  background: #4a4a4a;
+  text-align: center;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+#numericKeyboard.active {
+  height: 250px;
+}
+
+#numericKeyboard > div {
+  margin-top: 10px;
+}
+
+#numericKeyboard > div > button {
+  background: white;
+  color: black;
+  height: 30px;
+  width: 40px;
+  border: none;
+}
+
+#textBoxN {
+  width: 174px;
+}
+
+#numericKeyboard > div:nth-child(2) {
+  margin-left: -1px;
+}
+
+#numericKeyboard > div:nth-child(2) > button:nth-child(4) {
+  margin-left: 5px;
+}
+
+#numericKeyboard > div:nth-child(3) {
+  margin-left: -1px;
+}
+
+#numericKeyboard > div:nth-child(3) > button:nth-child(4) {
+  margin-left: 5px;
+}
+
+#numericKeyboard > div:nth-child(4) {
+  margin-left: -1px;
+}
+
+#numericKeyboard > div:nth-child(4) > button:nth-child(4) {
+  margin-left: 5px;
+}
+
+#numericKeyboard > div:nth-child(5) {
+  margin-left: -2px;
+}
+
+#numericKeyboard > div:nth-child(5) > button:nth-child(3) {
+  margin-left: 5px;
+}
+
+#numericKeyboard > div:nth-child(5) > button:nth-child(2) {
+  width: 84px;
+}
+
+#numericKeyboard > div:nth-child(6) {
+  margin-left: -1px;
+}
+
+#numericKeyboard > div:nth-child(6) > button:nth-child(2) {
+  margin-left: 5px;
+}
+
+#numericKeyboard > div:nth-child(6) > button:nth-child(3) {
+  margin-left: 5px;
+  width: 54px;
+}
+
+#numericKeyboard > div:nth-child(6) > button:nth-child(2) {
+  width: 65px;
+}
+
+/*----- Numeric keyboard end ----- */
+
+
+
+
+/* ----- Kana keyboard start ----- */
+#kanaKeyboard {
+  background: #4a4a4a;
+  text-align: center;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+#kanaKeyboard.active {
+  height: 290px;
+}
+
+#kanaKeyboard > div {
+  margin-top: 10px;
+}
+
+#kanaKeyboard > div > button {
+  background: white;
+  color: black;
+  height: 30px;
+  width: 40px;
+  border: none;
+  transition: background-color 0.5s
+}
+
+#kanaKeyboard > div > #kana-s1.disabled {
+  background-color: grey;
+}
+
+#kanaKeyboard > div > #kana-s2.disabled {
+  background-color: grey;
+}
+
+#kanaKeyboard > div > .upper-case.disabled {
+  background-color: grey;
+}
+
+#textBoxK {
+  width: 365px;
+}
+
+#kanaKeyboard > div:last-child > button:nth-child(1) {
+  width: 65px;
+
+}
+
+#kanaKeyboard > div:last-child > button:nth-child(2) {
+  width: 85px;
+  margin-left: 10px;
+}
+
+#kanaKeyboard > div:last-child > button:nth-child(3) {
+  width: 65px;
+  margin-left: 10px;
+}
+
+#kanaKeyboard > div:last-child > button:nth-child(4) {
+  width: 65px;
+  margin-left: 10px;
+}
+
+#kanaKeyboard > div:last-child > button:last-child {
+  width: 100px;
+  margin-left: 10px;
+}
+
+/* ----- Kana keyboard end ----- */

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="js/keyboard.js"></script>
+<link rel="stylesheet" href="css/keyboard.css">
+</head>
+
+<body>
+
+	<input type="text" id="textbox" />
+	<br>
+	<br>
+	<br>
+	<input type="text" id="textbox2" />
+	<br>
+	<br>
+	<br>
+	<input type="text" id="textbox3" />
+    <!-- romaji keyboard start -->
+	<div id="romajiKeyboard"  tabindex="0">
+	  <div>
+	  	<input type="text" id="textBoxR" />
+	  </div>
+	  <div>
+		  <button class="add-text">Q</button>
+		  <button class="add-text">W</button>
+		  <button class="add-text">E</button>
+		  <button class="add-text">R</button>
+		  <button class="add-text">T</button>
+		  <button class="add-text">Y</button>
+		  <button class="add-text">U</button>
+		  <button class="add-text">I</button>
+		  <button class="add-text">O</button>
+		  <button class="add-text">P</button>
+	  </div>
+	  <div>
+		  <button class="add-text">A</button>
+		  <button class="add-text">S</button>
+		  <button class="add-text">D</button>
+		  <button class="add-text">F</button>
+		  <button class="add-text">G</button>
+		  <button class="add-text">H</button>
+		  <button class="add-text">J</button>
+		  <button class="add-text">K</button>
+		  <button class="add-text">L</button>
+	  </div>
+	  <div>
+		  <button class="add-text">Z</button>
+		  <button class="add-text">X</button>
+		  <button class="add-text">C</button>
+		  <button class="add-text">V</button>
+		  <button class="add-text">B</button>
+		  <button class="add-text">N</button>
+		  <button class="add-text">M</button>
+	  </div>
+	  <div>
+		  <button id="romaji-close">閉じる</button>
+		  <button id="romaji-suuji">数字</button>
+		  <button id="romaji-kana">カナ</button>
+		  <button id="romaji-komoji">小文字</button>
+		  <button id="romaji-modoru">1字戻る</button>
+		  <button id="romaji-kettei">決定</button>
+	  </div>
+	</div>
+	<!-- romaji keyboard end -->
+
+    <!-- numeric keyboard start -->
+	<div id="numericKeyboard"  tabindex="0">
+	  <div>
+	  	<input type="text" id="textBoxN" />
+	  </div>
+	  <div>
+		  <button class="add-num">1</button>
+		  <button class="add-num">2</button>
+		  <button class="add-num">3</button>
+		  <button id="num-clear">C</button>
+
+	  </div>
+	  <div>
+		  <button class="add-num">4</button>
+		  <button class="add-num">5</button>
+		  <button class="add-num">6</button>
+		  <button id="num-back">BS</button>
+
+	  </div>
+	  <div>
+		  <button class="add-num">7</button>
+		  <button class="add-num">8</button>
+		  <button class="add-num">9</button>
+		  <button id="num-sen">千</button>
+	  </div>
+	  <div>
+		  <button class="add-num">0</button>
+		  <button class="add-num">00</button>
+		  <button id="num-man">万</button>
+	  </div>
+	  <div>
+		  <button id="num-close">閉</button>
+		  <button id="romaji">ローマ字</button>
+		  <button id="num-kettei">確定</button>
+	  </div>
+	</div>
+	<!-- numeric keyboard end -->
+
+    <!-- kana keyboard start -->
+	<div id="kanaKeyboard"  tabindex="0">
+	  <div>
+	  	<input type="text" id="textBoxK" />
+	  </div>
+	  <div>
+		  <button class="add-kana upper-case">ワ</button>
+		  <button class="add-kana upper-case">ラ</button>
+		  <button class="add-kana">ヤ</button>
+		  <button class="add-kana upper-case">マ</button>
+		  <button class="add-kana upper-case">ハ</button>
+		  <button class="add-kana upper-case">ナ</button>
+		  <button class="add-kana upper-case">タ</button>
+		  <button class="add-kana upper-case">サ</button>
+		  <button class="add-kana upper-case">カ</button>
+		  <button class="add-kana">ア</button>
+	  </div>
+	  <div>
+		  <button class="add-kana upper-case">ヲ</button>
+		  <button class="add-kana upper-case">リ</button>
+		  <button class="add-kana">ユ</button>
+		  <button class="add-kana upper-case">ミ</button>
+		  <button class="add-kana upper-case">ヒ</button>
+		  <button class="add-kana upper-case">ニ</button>
+		  <button class="add-kana upper-case">チ</button>
+		  <button class="add-kana upper-case">シ</button>
+		  <button class="add-kana upper-case">キ</button>
+		  <button class="add-kana">イ</button>
+	  </div>
+	  <div>
+		  <button class="add-kana upper-case">ン</button>
+		  <button class="add-kana upper-case">ル</button>
+		  <button class="add-kana">ヨ</button>
+		  <button class="add-kana upper-case">ム</button>
+		  <button class="add-kana upper-case">フ</button>
+		  <button class="add-kana upper-case">ヌ</button>
+		  <button class="add-kana">ツ</button>
+		  <button class="add-kana upper-case">ス</button>
+		  <button class="add-kana upper-case">ク</button>
+		  <button class="add-kana">ウ</button>
+	  </div>
+	  <div>
+		  <button id="kana-s1">゛</button>
+		  <button class="add-kana upper-case">レ</button>
+		  <button class="add-kana upper-case">ー</button>
+		  <button class="add-kana upper-case">メ</button>
+		  <button class="add-kana upper-case">ヘ</button>
+		  <button class="add-kana upper-case">ネ</button>
+		  <button class="add-kana upper-case">テ</button>
+		  <button class="add-kana upper-case">セ</button>
+		  <button class="add-kana upper-case">ケ</button>
+		  <button class="add-kana ">エ</button>
+	  </div>
+	  <div>
+		  <button id="kana-s2">゜</button>
+		  <button class="add-kana upper-case">ロ</button>
+		  <button class="add-kana upper-case">　</button>
+		  <button class="add-kana upper-case">モ</button>
+		  <button class="add-kana upper-case">ホ</button>
+		  <button class="add-kana upper-case">ノ</button>
+		  <button class="add-kana upper-case">ト</button>
+		  <button class="add-kana upper-case">ソ</button>
+		  <button class="add-kana upper-case">コ</button>
+		  <button class="add-kana">オ</button>
+	  </div>
+	  <div>
+		  <button id="kana-close">閉じる</button>
+		  <button id="kana-romaji">ローマ字</button>
+		  <button id="kana-komoji">小文字</button>
+		  <button id="kana-modoru">1字戻る</button>
+		  <button id="kana-kettei">決定</button>
+	  </div>
+	</div>
+	<!-- kana keyboard end -->
+
+
+</body>
+
+</html>
+
+
+
+
